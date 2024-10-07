@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW - Contactez-nous</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact</h1>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="models.html">Nos Modèles</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+ 
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form action="submit-form.php" method="POST">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="6" placeholder="Votre message..." required></textarea>
+
+            <input type="submit" value="Envoyer">
+        </form>
+
+        <div class="social-media">
+            <h3>Suivez-nous sur les réseaux sociaux</h3>
+            <a href="https://www.facebook.com/BMW/?locale=fr_FR" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://x.com/BMW?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://www.instagram.com/bmw/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.linkedin.com/company/bmw-group/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+    </section>
+</body>
+</html>

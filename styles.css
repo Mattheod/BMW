@@ -1,0 +1,289 @@
+/* Style de base pour le corps de la page */
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* En-tête */
+header {
+    background-color: #004481; /* Couleur associée à BMW */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+}
+
+/* Définir une largeur fixe pour le conteneur principal */
+.container {
+    max-width: 1200px; /* Tu peux ajuster la largeur à ta convenance */
+    margin: 0 auto;    /* Cela centre le conteneur */
+    padding: 0 20px;   /* Un peu de padding pour éviter que le texte touche les bords */
+}
+
+
+/* Style pour le menu de navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #004481; /* Couleur BMW */
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #ffc107; /* Couleur au survol */
+}
+
+
+/* Section d'accueil */
+section {
+    padding: 80px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+section img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Style pour la section Contact */
+#contact {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact label {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #333;
+    width: 100%;
+    text-align: left;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contact textarea {
+    resize: vertical;
+}
+
+#contact input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #004481; /* Couleur BMW */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #003366;
+}
+
+.social-media a {
+    margin: 10 10px;
+    color: #ffffff; /* Couleur des icônes */
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #ffc107; /* Couleur au survol */
+}
+
+/* Style de la galerie de modèles en colonnes */
+.gallery {
+    display: flex;
+    flex-direction: column; /* Afficher les éléments en colonne */
+    align-items: center;     /* Centrer les éléments en colonne */
+    gap: 20px;               /* Espacement entre les éléments */
+    margin-top: 20px;
+}
+
+.model {
+    text-align: center;
+}
+
+.model img {
+    width: 400px; /* Largeur fixe pour les images */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.model p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #004481; /* Couleur BMW */
+    font-size: 1.1em;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; /* Taille de la police */
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    color: #004481; /* Couleur des liens */
+}
+
+button, a {
+    background-color: #004481;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, a:hover {
+    background-color: #ffc107; /* Change la couleur de fond au survol */
+    transform: scale(1.1); /* Agrandit légèrement l'élément */
+}
+img {
+    transition: transform 0.5s ease;
+}
+
+img:hover {
+    transform: scale(1.1) rotate(5deg); /* Agrandir et faire légèrement tourner l'image */
+}
+
+h1 {
+    opacity: 0; /* Commence avec une opacité de 0 (invisible) */
+    animation: fadeIn 2s forwards; /* Animation de 2 secondes */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Termine avec une opacité de 1 (complètement visible) */
+    }
+}
+
+/* CSS pour rendre invisible au départ */
+section {
+    opacity: 1;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Lorsque l'élément est visible à l'écran */
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.ripple {
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple::after {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    animation: ripple-effect 0.6s ease-out;
+    transform: scale(0);
+}
+
+@keyframes ripple-effect {
+    100% {
+        transform: scale(100);
+        opacity: 0;
+    }
+}
+
+.social-icons {
+    background-color: transparent; /* Assure que le fond est transparent */
+    border: none; /* Supprime les bordures si nécessaire */
+}
+.parent-container {
+    background-color: transparent; /* Supprime le fond du parent */
+    padding: 0; /* Ajuste les marges et les paddings */
+    margin: 0;
+}
+.social-icons {
+    border: none; /* Supprime les bordures */
+    box-shadow: none; /* Supprime les ombres */
+}
